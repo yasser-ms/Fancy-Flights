@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--CSS-->
+  <link rel="stylesheet" href="../css/style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!--FONTS-->
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet" />
+  <!--ICONS-->
+  <script src="https://kit.fontawesome.com/4590cc7992.js" crossorigin="anonymous"></script>
+  <!--SLIDER-->
+  <link href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+" rel="stylesheet">
+  <title>Fancy Travels</title>
+</head>
+
+<body>
+  <article id="Home">
+    <!--NavBar-->
+    <nav>
+      <div class="nav-center">
+        <div class="nav-header">
+          <span class="Logo">Fancy Flights</span>
+          <button class="nav-toggle">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+
+        <div class="nav-links">
+          <a href="Home.html" class="nav-link">Home</a>
+          <a href="Blog.html" class="nav-link">Blog</a>
+          <a href="#services" class="nav-link">Services</a>
+          <a href="#Explore" class="nav-link">Explore Algeria</a>
+        </div>
+        <div class="nav-buttons">
+          <a href="#popular" class="btn-block">Booking</a>
+        </div>
+      </div>
+    </nav>
+    <!--HERO-->
+    <section class="hero">
+      <div class="hero-center">
+        <div class="hero-title">
+          <h1>Voyagez et savourez intensément chaque instant</h1>
+          <p>
+            Explorez de nouveaux horizons et vivez des aventures inoubliables , apprécier et embrassez pleinement la
+            promesse de
+            découverte et de bonheur.
+          </p>
+          <div class="hero-link">
+            <a href="#popular">Booking</a>
+          </div>
+        </div>
+
+        <div class="image-container">
+          <img src="../assets/images/Greece.jpg" alt="image" />
+        </div>
+      </div>
+    </section>
+    <!--ABOUT US-->
+    <section class="about">
+      <div class="about-center">
+        <h2>Qui Somme nous</h2>
+        <p>Fancy Flights, bien plus qu'une agence de voyage, nous sommes les artisants passionnés de votre prochaine
+          aventure. Avec
+          une expertise inégalée et un service personnalisé, nous vous offrons bien plus que des billets d'avion : nous
+          sommes les
+          architectes de vos reves d'évasion. Que vous aspiriez a découvrir des destinations exotiques , a vous immergez
+          a des
+          cultures fascinantes ou a vivre des experiences inoubliables , notre équipe dévouée est la pour transformer
+          vos désirs
+          en réalité. A Fancy Flights , nous croyons en la magie du voyage et nous nous engageons a vous offrir des
+          voyages
+          d'exception . </p>
+      </div>
+    </section>
+    <!--SERVICES-->
+    <section id="services" class="services">
+      <!--Title-->
+      <div class="title">
+        <h2>Nous offrons les meilleurs services</h2>
+      </div>
+      <!--SERVICE-->
+      <div class="service-center">
+        <!--Single SERVICE--->
+        <article class="service ">
+          <div class="service-title">
+            <p>Circuits Personnalisés</p>
+            <button type="button" class="service-btn">
+              <span class="on-icon"><i class="fa-solid fa-chevron-down"></i></span>
+              <span class="off-icon"><i class="fa-solid fa-chevron-up"></i></span>
+            </button>
+          </div>
+          <!--SERVICE TEXT-->
+          <div class="service-text">
+            <div class="service-image">
+              <img src="../assets/images/voyage en groupe.jpg" alt="Voyage en groupe">
+            </div>
+            <div class="service-desc">
+              <p>
+                Vous êtes un CE, une famille, un grand groupe ? Nous pouvons personnaliser votre voyage avec ou sans
+                accompagnateur selon votre rythme et vos envies. Un conseiller Chamina Voyages établira un devis
+                personnalisé.
+              </p>
+              <button class="btn"
+                onclick="bookCountry('Circuits Personnalisés','../assets/images/voyage en groupe.jpg')">More</button>
+            </div>
+          </div>
+        </article>
+        <!--END-->
+        <div class="service-center">
+          <!--Single SERVICE--->
+          <article class="service">
+            <div class="service-title">
+              <p>Croisières de Luxe</p>
+              <button class="service-btn" type="button">
+                <span class="on-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                <span class="off-icon"><i class="fa-solid fa-chevron-up"></i></span>
+              </button>
+            </div>
+            <!--SERVICE TEXT-->
+            <div class="service-text">
+              <div class="service-image">
+                <img src="../assets/images/greece2.jpg" alt="Voyage en groupe">
+              </div>
+              <div class="service-desc">
+                <p>
+                  Embarquez pour un voyage de luxe et de détente avec nos forfaits de
+                  croisière exclusifs. Naviguez en mer avec style, régalez-vous de
+                  plats gastronomiques et vivez un confort inégalé à bord de nos
+                  paquebots de croisière de luxe.
+                </p>
+                <button class="btn"
+                  onclick="bookCountry('Croisières de Luxe','../assets/images/greece2.jpg')">More</button>
+              </div>
+            </div>
+          </article>
+          <!--END-->
+          <div class="service-center">
+            <!--Single SERVICE--->
+            <article class="service">
+              <div class="service-title">
+                <p>Évasions Aventure</p>
+                <button class="service-btn" type="button">
+                  <span class="on-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                  <span class="off-icon"><i class="fa-solid fa-chevron-up"></i></span>
+                </button>
+              </div>
+              <!--SERVICE TEXT-->
+              <div class="service-text style-text">
+                <div class="service-image">
+                  <img src="../assets/images/randonne2.jpg" alt="Voyage en groupe">
+                </div>
+                <div class="service-desc">
+                  <p>
+                    Faites monter votre adrénaline avec nos forfaits d'évasion aventure.
+                    De la randonnée à travers des paysages exotiques aux sports nautiques
+                    palpitants, nous vous aiderons à vivre le frisson de l'aventure dans
+                    des destinations à couper le souffle.
+                  </p>
+                  <button class="btn"
+                    onclick="bookCountry('Évasions Aventure','../assets/images/randonne2.jpg')">More</button>
+                </div>
+              </div>
+            </article>
+            <!--END-->
+          </div>
+    </section>
+    <!--POPULAR DESTINATION-->
+    <section id="popular" class="popular">
+      <section class="popular-slider splide" aria-labelledby="carousel-heading">
+        <div class="splide__arrows">
+          <button class="splide__arrow splide__arrow--prev">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="splide__arrow splide__arrow--next">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+        <div class="popular-text">
+          <h2 id="carousel-heading">Destinations populaires</h2>
+          <p>Découvrez nos destinations incontournables pour des expériences uniques . Des villes emblématiques aux
+            paysages
+            spectaculaires, explorez le meilleur du voyage avec nous.</p>
+        </div>
+        <div class="splide__track popular-slider">
+          <ul class="splide__list">
+            <!--Slider 1-->
+            <li class="splide__slide list-slide">
+              <div class="card-wrapper">
+                <div class="card">
+                  <div class="content-image"><img src="../assets/images/popular destinations/Paris.jpg" alt="paris"
+                      class="content-img"></div>
+                  <div class="card-text">
+                    <h2 class="name">Paris, France</h2>
+                    <p>Paris, ville des lumieres. Entre monuments emblématiques et charme unique , laissez-vous séduire
+                      par son ambiance captivante.
+                    </p>
+                    <button class="book-btn"
+                      onclick="bookCountry('Paris, France', '../assets/images/popular destinations/Paris.jpg')">Book</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!--Slider 2-->
+            <li class="splide__slide list-slide">
+              <div class="card-wrapper">
+                <div class="card">
+                  <div class="content-image"><img src="../assets/images/popular destinations/Barcelone.jpg" alt=""
+                      class="content-img">
+                  </div>
+                  <div class="card-text">
+                    <h2 class="name">Barcelone, Spain</h2>
+                    <p>Découvrez Barcelone: une fusion unique d'architecture et de culture méditerranéenne.</p>
+                    <button class="book-btn"
+                      onclick="bookCountry(`Barcelone, Spain`,`../assets/images/popular destinations/Barcelone.jpg`)">Book</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!--Slider 3-->
+            <li class="splide__slide list-slide">
+              <div class="card-wrapper">
+                <div class="card">
+                  <div class="content-image"><img src="../assets/images/popular destinations/istanbul.jpg" alt=""
+                      class="content-img">
+                  </div>
+                  <div class="card-text">
+                    <h2 class="name">Istanbul, Turkey</h2>
+                    <p>Istanbul, entre orient et occident, dévoile ses trésors:ruelles animées,saveurs exquises.</p>
+                    <button class="book-btn"
+                      onclick="bookCountry(`Istanbul, Turkey`,`../assets/images/popular destinations/istanbul.jpg`)">Book</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!--Slider 4-->
+            <li class="splide__slide list-slide">
+              <div class="card-wrapper">
+                <div class="card">
+                  <div class="content-image"><img src="../assets/images/Greece.jpg" alt="" class="content-img">
+                  </div>
+                  <div class="card-text">
+                    <h2 class="name">Greece</h2>
+                    <p>Grèce: entre vestiges antiques, iles pittoresques , plongez dans son histoire mythique et son
+                      ambiance chaleureuse.</p>
+                    <button class="book-btn" onclick="bookCountry(`Greece`,`../assets/images/Greece.jpg`)">Book</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!--Slider 5-->
+            <li class="splide__slide list-slide">
+              <div class="card-wrapper">
+                <div class="card">
+                  <div class="content-image"><img src="../assets/images/popular destinations/La Mecque.jpg" alt=""
+                      class="content-img">
+                  </div>
+                  <div class="card-text">
+                    <h2 class="name">La Mecque</h2>
+                    <p>La Mecque: le coeur vibrant de l'islam, ou la spiritualité intense et la foi sont palpables a
+                      chaque instant.</p>
+                    <button class="book-btn"
+                      onclick="bookCountry(`La Mecque`,`../assets/images/popular destinations/La Mecque.jpg`)">Book</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </section>
+    <!--EXPLORE ALGERIA-->
+    <section id="Explore" class="popular">
+      <section class="algeria-slider splide" aria-labelledby="carousel-heading">
+        <div class="splide__arrows">
+          <button class="splide__arrow splide__arrow--prev">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="splide__arrow splide__arrow--next">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+        <div class="popular-text">
+          <h2 id="carousel-heading">Explorez l'Algerie</h2>
+          <p>Une terre de contrastes ou l'hisoire millénaire se mele aux paysages grandioses
+            et a la chaleur de son peuple. Explorez
+            ce joyau méditerranéen et laissez-vous imprégner par sa culture et sa beauté naturelle .</p>
+        </div>
+        <div class="splide__track popular-slider">
+          <ul class="splide__list">
+            <!--Slider 1-->
+            <li class="splide__slide list-slide">
+              <div class="card-wrapper">
+                <div class="card">
+                  <div class="content-image"><img src="../assets/images/Algeria/Jardin d'essai du Hamma.webp" alt=""
+                      class="content-img"></div>
+                  <div class="card-text">
+                    <h2>Jardin d'essai du Hamma,Alger</h2>
+                    <p>Le Jardin d'essai d'Alger :un oasis urbain ou la nature et l'histoire se rencontrent
+                      harmonieusement.</p>
+                    <button class="book-btn"
+                      onclick="bookCountry('Jardin d\'essai du Hamma,Alger', '../assets/images/Algeria/Jardin d\'essai du Hamma.webp')">Book</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!--Slider 2-->
+            <li class="splide__slide list-slide">
+              <div class="card-wrapper">
+                <div class="card">
+                  <div class="content-image"><img src="../assets/images/Algeria/Monument of Martyrs.jpg" alt=""
+                      class="content-img">
+                  </div>
+                  <div class="card-text">
+                    <h2>Le Mémorial du martyr, Alger</h2>
+                    <p>Le Mémorial du martyr : un symbole puissant de l'indépendence , chargé d'histoire et d'émotion .
+                    </p>
+                    <button class="book-btn"
+                      onclick="bookCountry('Monument of Martyrs, Alger', '../assets/images/Algeria/Monument of Martyrs.jpg')">Book</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!--Slider 3-->
+            <li class="splide__slide list-slide">
+              <div class="card-wrapper">
+                <div class="card">
+                  <div class="content-image"><img src="../assets/images/Algeria/Santa Cruz.jpg" alt=""
+                      class="content-img">
+                  </div>
+                  <div class="card-text">
+                    <h2>Santa Cruz, Oran</h2>
+                    <p>Santa Cruz : <br> une icone historique offrant une vue magnifique sur la baie et une atmosphere
+                      animée.</p>
+                    <button class="book-btn"
+                      onclick="bookCountry('Santa Cruz, Oran', '../assets/images/Algeria/Santa Cruz.jpg')">Book</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!--Slider 4-->
+            <li class="splide__slide list-slide">
+              <div class="card-wrapper">
+                <div class="card">
+                  <div class="content-image"><img src="../assets/images/Algeria/Tikjda.webp" alt="" class="content-img">
+                  </div>
+                  <div class="card-text">
+                    <h2>Tikjda</h2>
+                    <p>Tikejda: un paradis naturel niché au coeur des montagnes de kabylie , ou randonnées pittoresques
+                      et cascades
+                      spectaculaires vous attendent.</p>
+                    <button class="book-btn"
+                      onclick="bookCountry('Tikjda', '../assets/images/Algeria/Tikjda.webp')">Book</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!--Slider 5-->
+            <li class="splide__slide list-slide">
+              <div class="card-wrapper">
+                <div class="card">
+                  <div class="content-image"><img src="../assets/images/Algeria/Taghit.jpg" alt="" class="content-img">
+                  </div>
+                  <div class="card-text">
+                    <h2>Taghit</h2>
+                    <p>Taghit:<br> un havre de paix au coeur du Sahara , entre dunes majestueuses et culture nomade.</p>
+                    <button class="book-btn"
+                      onclick="bookCountry('Taghit', '../assets/images/Algeria/Taghit.jpg')">Book</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </section>
+    <!--Testimonials-->
+    <section class="tetsimonials">
+      <section class="testi-splide splide" aria-labelledby="carousel-heading">
+        <h2 id="carousel-heading">Ce que disent nos clients</h2>
+
+        <div class="splide__track slider-container">
+          <ul class="splide__list ">
+            <li class="splide__slide">
+              <div class="testi-text">
+                <p>"Une experience incroyable avec Fancy Flights! Leur équipe a rendu notre voyage totalement sans
+                  stress et mémorable.
+                  Je recommande vivement leurs services a tout ceux qui cherchent a vivre une aventure inoubliable"</p>
+                <span>Fancy Flight client</span>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="testi-text">
+                <p>Fancy Flights a surpassé toutes mes attentes.Leur attention aux détails et leur professionnalisme ont
+                  rendu mon voyage
+                  vraiment spécial . Je suis trés reconnaisant pour leur expertise et je
+                  les choisirai a nouveau pour mes prochains voyage " .</p>
+                <span>Fancy Flight client</span>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="testi-text">
+                <p>"J'ai réservé plusieurs voyages avec Fancy Flights et a chaque fois , ils ont su créer des
+                  litinéraires Personnalisés
+                  qui ont dépassé mes attentes .Leur équipe est
+                  toujours disponible pour répondre a toutes mes questions et je me sens en confiance a chaque étape de
+                  mon voyage ."</p>
+                <span>Fancy Flight client</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </section>
+    <!--GALLERY and Footer-->
+    <section class="gallery-footer">
+      <!--Gallery-->
+      <div class="gallery">
+        <div class="gallery-title">
+          <div class="gallery-text">
+            <h2>Notre Galerie</h2>
+            <p>Plongez dans un périple mondial a travers nos yeux !</p>
+          </div>
+          <a href="Home.html">Ouvrir Instagram</a>
+        </div>
+        <div class="container">
+          <div class="photo-gallery">
+
+            <div class="column" style="width: 300px;">
+              <div class="photo">
+                <img src="../assets/Gallery/Beach.jpg" alt="">
+              </div>
+              <div class="photo">
+                <img src="../assets/Gallery/Tourists paris.jpg" alt="">
+              </div>
+              <div class="photo">
+                <img src="../assets/Gallery/Tourists Poland.jpg" alt="">
+              </div>
+            </div>
+
+            <div class="column" style="width: 300px;">
+              <div class="photo">
+                <img src="../assets/Blog/Japan.jpg" alt="">
+              </div>
+              <div class="photo">
+                <img src="../assets/Blog/thailand.jpg" alt="">
+              </div>
+              <div class="photo">
+                <img src="../assets/images/popular destinations/Barcelone.jpg" alt="">
+              </div>
+            </div>
+            <div class="column" style="width: 300px;">
+              <div class="photo">
+                <img src="../assets/images/Algeria/Santa Cruz.jpg" alt="">
+              </div>
+              <div class="photo">
+                <img src="../assets/images/popular destinations/Paris.jpg" alt="">
+              </div>
+              <div class="photo">
+                <img src="../assets/images/Algeria/Tikjda.webp" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--FOOTER-->
+      <section class="footer">
+        <div class="footer-container">
+          <div class="newsletter-form">
+            <div class="newsletter-text">
+              <h2>Si vous avez des questions, nous sommes la pour vous aider !</h2>
+              <p>Votre satisfaction est notre priorité : laissez nous répondre a toutes vos questions.</p>
+            </div>
+            <form class="form-content">
+              <input type="email" class="form-input" placeholder="Input your email here" required>
+              <button class="btn" type="submit"><i class="fa-regular fa-paper-plane"></i></button>
+            </form>
+          </div>
+          <div class="footer-content">
+            <h2>Fancy Flights</h2>
+            <p>Voyagez avec l'ame , explorez avec le coeur: Bienvenue chez Fancy Flights.</p>
+            <div class="footer-links">
+              <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="Home.html#services">Services</a></li>
+                <li><a href="Home.html#Explore">Explore Algeria</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      </div>
+    </section>
+    <!--Back to top-->
+    <a href="#" class="to-top">
+      <i class="fa-solid fa-chevron-up"></i>
+    </a>
+  </article>
+  <!--JAVASCRIPT-->
+  <script src="../app.js" defer></script>
+
+  <!-----------------Redirect to the Booking.html------------>
+  <script>
+    // Définition de la fonction bookCountry avec les parametres "country" et "image"
+    function bookCountry(country, image) {
+      console.log('Country:', country);
+      console.log('Image:', image);
+
+      // Booking URL
+      const bookingPageUrl = 'Booking.html';
+
+      // Encodage des valeurs des paramètres pour les inclure dans l'URL
+      const encodedCountry = encodeURIComponent(country);
+      const encodedImage = encodeURIComponent(image);
+
+      // Construire la nouvelle la nouvelle URL
+      const redirectUrl = `${bookingPageUrl}?country=${encodedCountry}&image=${encodedImage}`;
+
+      // Rediriger vers la nouvelle URL
+      window.location.href = redirectUrl;
+    }
+
+
+  </script>
+
+  <script src="
+  https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+</body>
+
+</html>
